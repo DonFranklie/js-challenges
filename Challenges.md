@@ -83,7 +83,7 @@ countTrue([]) ➞ 0
 <div style="margin-top: 80px;"></div>
 
 
-# Challenge 3 - A Redundant Function - Status (Available)
+# Challenge 3 - A Redundant Function - Status (Done)
 **closures** <span style = "margin-right: 10px"></span> **functional_programming** <span style = "margin-right: 10px"></span> **language_fundamentals**
 
 Write a function redundant that takes in a string str and returns a function that returns str.

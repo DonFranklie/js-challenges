@@ -1,11 +1,11 @@
-const whatDoYouMean = document.querySelector(".what-do-you-mean");
+function redundant(str) {
 
-const amSurprised = document.querySelector(".am-surprised");
 
-amSurprised.style.cursor = "pointer";
+  return () => {
+    return str;
+  }
+}
 
-amSurprised.addEventListener('click', () => {
-whatDoYouMean.style.display = "block";
-whatDoYouMean.classList.add("animation");
+const f1 = redundant("Apple");
 
-});
+console.log(f1());
