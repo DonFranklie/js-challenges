@@ -65,7 +65,7 @@ fiscalCode({
 <div style="margin-top: 80px;"></div>
 
 
-# Challenge 2 - Status (Available)
+# Challenge 2 - Status (Done)
 Create a function which returns the number of **true** values there are in an array.
 
 ```javascript
