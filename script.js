@@ -1,7 +1,11 @@
-function towerOfHanoi(n) {
-  let result = ((2**n) - 1)
+// Return the Next Number from the Integer Passed
+
+function addition(param) {
+  let result = param + 1;
 
   return result;
 }
 
-console.log(towerOfHanoi(5));
+console.log(addition(0));
+console.log(addition(9));
+console.log(addition(-3));
