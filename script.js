@@ -1,17 +1,7 @@
-function countTrue(array) {
-  let numTrue = 0;
+function towerOfHanoi(n) {
+  let result = ((2**n) - 1)
 
-  for (let j = 0; j < array.length; j++) {
-    let item = array[j];
-
-    if (item === true) {
-      numTrue += 1
-    }
-  }
-
-  return numTrue;
+  return result;
 }
 
-console.log(countTrue([true, false, false, true,false]));
-console.log(countTrue([false, false, false, false]));
-console.log(countTrue([]));
+console.log(towerOfHanoi(5));
