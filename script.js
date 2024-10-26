@@ -1,26 +1,24 @@
-// Number of Boomerangs
+// How Many Days Between Two Dates
 
-function countBoomerangs(array) {
-  let numberOfBoomerangs = 0;
+function getDays(date1, date2) {
+  let oneDay = 1000 * 60 * 60 * 24;
+  const difference = date2 - date1;
 
-  theLoop:
-  for (let i = 0; i < array.length; i++) {
-    const element1 = array[i];
-    const element2 = array[i+1];
-    const element3 = array[i+2];
-
-    if (element1 === element3 && element1 !== element2) {
-      numberOfBoomerangs += 1;
-    } else {
-      continue theLoop;
-    }
-    
-  }
-
-
-  return numberOfBoomerangs;
+return difference / oneDay;
 }
 
-console.log(countBoomerangs([9, 5, 9, 5, 1, 1, 1]));
-console.log(countBoomerangs([5, 6, 6, 7, 6, 3, 9]));
-console.log(countBoomerangs([4, 4, 4, 9, 9, 9, 9]));
+console.log(getDays(
+  new Date("June 14, 2019"),
+  new Date("June 20, 2019")
+));
+
+console.log(getDays(
+  new Date("December 29, 2018"),
+  new Date("January 1, 2019")
+));
+
+console.log(getDays(
+  new Date("July 20, 2019"),
+  new Date("July 30, 2019")
+));
+
