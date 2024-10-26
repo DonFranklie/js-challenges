@@ -1,24 +1,26 @@
-// Oddish vs. Evenish
+// Number of Boomerangs
 
-function oddishOrEvenish(num) {
-  let number = num.toString();
-  number = number.split('');
-  let sum = 0;
+function countBoomerangs(array) {
+  let numberOfBoomerangs = 0;
 
-  for (let i = 0; i < number.length; i++) {
-    const element = number[i];
-    sum += Number(element);
+  theLoop:
+  for (let i = 0; i < array.length; i++) {
+    const element1 = array[i];
+    const element2 = array[i+1];
+    const element3 = array[i+2];
+
+    if (element1 === element3 && element1 !== element2) {
+      numberOfBoomerangs += 1;
+    } else {
+      continue theLoop;
+    }
     
   }
 
-  if (sum % 2 === 0 ) {
-    return 'Evenish';
-  } else {
-    return 'Oddish';
-  }
 
+  return numberOfBoomerangs;
 }
 
-console.log(oddishOrEvenish(43));
-console.log(oddishOrEvenish(373));
-console.log(oddishOrEvenish(4433));
+console.log(countBoomerangs([9, 5, 9, 5, 1, 1, 1]));
+console.log(countBoomerangs([5, 6, 6, 7, 6, 3, 9]));
+console.log(countBoomerangs([4, 4, 4, 9, 9, 9, 9]));
