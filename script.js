@@ -1,24 +1,19 @@
-// How Many Days Between Two Dates
+// Palindrome Checker
 
-function getDays(date1, date2) {
-  let oneDay = 1000 * 60 * 60 * 24;
-  const difference = date2 - date1;
+function isPalindrome(word) {
+  let newWord = word.toLowerCase().split("").reverse();
+  // newWord = newWord.reverse();
 
-return difference / oneDay;
+  if ( newWord.join("") === word.toLowerCase()) {
+    return true
+  } else {
+    return false
+  }
+  
+
+
 }
 
-console.log(getDays(
-  new Date("June 14, 2019"),
-  new Date("June 20, 2019")
-));
-
-console.log(getDays(
-  new Date("December 29, 2018"),
-  new Date("January 1, 2019")
-));
-
-console.log(getDays(
-  new Date("July 20, 2019"),
-  new Date("July 30, 2019")
-));
-
+console.log(isPalindrome("madam"));
+console.log(isPalindrome("RaceCar"));
+console.log(isPalindrome("apple"));
