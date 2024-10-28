@@ -1,21 +1,45 @@
-// Find Longest Word
-  
-function findLongestWord(sentence) {
-  sentence = sentence.replace(/[\,.?'"@!$()]/g, "").toLowerCase().split(" ");
-  let longestWord = "";
+// Get Vowel Count
 
-    for (let i = 0; i < sentence.length; i++) {
-      const word = sentence[i];
+function getVowelCount(sentence) {
+  let vowelCount = 0;
+  let sentenceArr = Array.from(sentence);
 
-      if (longestWord.length < word.length) {
-        longestWord = word;
-      }
-      
+  for (let j = 0; j < sentenceArr.length; j++) {
+    let element = sentenceArr[j];
+
+    if (element === 'a') {
+      vowelCount += 1;
+    }
+       if (element === 'e') {
+      vowelCount += 1;
     }
 
-    return longestWord;
+     if (element === 'i') {
+      vowelCount += 1;
+    }
+
+     if (element === 'o') {
+      vowelCount += 1;
+    }
+
+     if (element === 'u') {
+      vowelCount += 1;
+    }
+  }
+
+
+  return vowelCount;
 }
 
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog.")); // "jumped"
-console.log(findLongestWord("To be or not to be, that is the question.")); // "question"
-console.log(findLongestWord("JavaScript is awesome!")); // "JavaScript"
+console.log(getVowelCount("hello world")); // 3
+console.log(getVowelCount("JavaScript is awesome!")); // 8
+console.log(getVowelCount("Why?")); // 0
+
+/*
+
+let sentence = "Hello World";
+let sentenceArr = Array.from(sentence);
+console.log(sentenceArr);
+// console.log(sentence.includes("o"));
+
+*/
