@@ -1,15 +1,28 @@
-## Challenge:
-Write a function called **arraySum** that takes an array of numbers as input and returns the sum of only the positive numbers. If the array is empty or there are no positive numbers, the function should return **0**.
+## Today's Challenge: Reverse a String
+Write a JavaScript function that takes a string as input and returns the string reversed.
 
-Requirements:
+For example:
 
-Only add positive numbers (greater than zero) to the sum.
-If the array contains negative numbers or zeros, ignore them.
+```javascript
+reverseString("Hello, World!");
+```
+Output:
+```javascript
+"!dlroW ,olleH"
+```
+## Challenge 2 {Put on Hold}:
+Write a function called **capitalizeWords** that takes a sentence as input and returns the sentence with the first letter of each word capitalized.
+
+### Requirements:
+
+Ensure that only the first letter of each word is capitalized, and the rest are lowercase.
+Assume that words are separated by single spaces and handle mixed-case inputs.
 Example:
 
 ```javascript
-console.log(arraySum([1, -4, 7, 12])); // 20
-console.log(arraySum([-3, -2, -1, 0])); // 0
-console.log(arraySum([])); // 0
+Copy code
+console.log(capitalizeWords("hello world")); // "Hello World"
+console.log(capitalizeWords("javaScript is fun")); // "Javascript Is Fun"
+console.log(capitalizeWords("HELLO from the OTHER SIDE")); // "Hello From The Other Side"
 ```
-Hint: Use array methods like filter and reduce to make it more concise.
+Hint: Try using **split**, **map**, and **join** to make it concise.

@@ -1,12 +1,9 @@
-// Array Sum
+function reversedString(string) {
+  let newSplitString = string.split("").reverse();
 
-function arraySum(array) {
-  let positivesArray = array.filter(x => x > 0);
-  let sumOfArray = positivesArray.reduce((acc, value) => acc + value, 0);
+  let reversedString = newSplitString.join("");
 
-  return sumOfArray;
+  return reversedString;
 }
 
-console.log(arraySum([1, -4, 7, 12])); // 20
-console.log(arraySum([-3, -2, -1, 0])); // 0
-console.log(arraySum([])); // 0
+console.log(reversedString("Hello World!"));
