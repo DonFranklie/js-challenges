@@ -1,9 +1,9 @@
-function reversedString(string) {
-  let newSplitString = string.split("").reverse();
+function removeDuplicates(array) {
+  let arr = new Set(array);
 
-  let reversedString = newSplitString.join("");
-
-  return reversedString;
+  return arr;
 }
 
-console.log(reversedString("Hello World!"));
+console.log(
+  removeDuplicates([1, 2, 3, 4, 4, 5, 5, 6])
+);

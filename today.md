@@ -1,15 +1,17 @@
-## Today's Challenge: Reverse a String
-Write a JavaScript function that takes a string as input and returns the string reversed.
+## Today's Challenge: Remove Duplicates from an Array
+Write a JavaScript function, **removeDuplicates** that takes an array of numbers and returns a new array with all duplicate elements removed.
 
 For example:
 
 ```javascript
-reverseString("Hello, World!");
+removeDuplicates([1, 2, 3, 4, 4, 5, 5, 6]);
 ```
 Output:
+
 ```javascript
-"!dlroW ,olleH"
+[1, 2, 3, 4, 5, 6]
 ```
+
 ## Challenge 2 {Put on Hold}:
 Write a function called **capitalizeWords** that takes a sentence as input and returns the sentence with the first letter of each word capitalized.
 
@@ -20,7 +22,6 @@ Assume that words are separated by single spaces and handle mixed-case inputs.
 Example:
 
 ```javascript
-Copy code
 console.log(capitalizeWords("hello world")); // "Hello World"
 console.log(capitalizeWords("javaScript is fun")); // "Javascript Is Fun"
 console.log(capitalizeWords("HELLO from the OTHER SIDE")); // "Hello From The Other Side"
