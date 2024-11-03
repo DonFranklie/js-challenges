@@ -1,15 +1,29 @@
-## Today's Challenge: Remove Duplicates from an Array
-Write a JavaScript function, **removeDuplicates** that takes an array of numbers and returns a new array with all duplicate elements removed.
-
-For example:
+## Today's Challenge: Area of a Triangle
+Write a function that takes the base and height of a triangle and return its area.
 
 ```javascript
-removeDuplicates([1, 2, 3, 4, 4, 5, 5, 6]);
+triArea(3, 2) ➞ 3
+
+triArea(7, 4) ➞ 14
+
+triArea(10, 10) ➞ 50
 ```
-Output:
+
+
+
+
+## Challenge on Hold:
+Write a function called **flattenAndSort** that takes a two-dimensional array of numbers (an array containing other arrays of numbers) and returns a single, flat array of numbers, sorted in ascending order.
+
+### Requirements:
+
+1. Flatten the array to remove all nested levels.
+2. Sort the numbers in ascending order.
 
 ```javascript
-[1, 2, 3, 4, 5, 6]
+console.log(flattenAndSort([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]])); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(flattenAndSort([[1, 3, 5], [100], [2, 4, 6]])); // [1, 2, 3, 4, 5, 6, 100]
+console.log(flattenAndSort([[], []])); // []
 ```
 
 ## Challenge 2 {Put on Hold}:
