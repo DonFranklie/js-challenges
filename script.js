@@ -1,24 +1,19 @@
-function deepClone(object) {
-  let deepClone = structuredClone(object);
 
-  return deepClone;
+function flattenAndSort(array) {
+  // Step 1: Flatten the array using reduce
+  const flattenedArray = array.reduce((acc, curr) => acc.concat(curr), []);
+  
+  // Step 2: Sort the flattened array in ascending order
+  return flattenedArray.sort((a, b) => a - b);
 }
 
-const original = {
-  name: "Alice",
-  age: 25,
-  hobbies: ["reading", "hiking"],
-  address: {
-    city: "Wonderland",
-    zip: "12345",
-  },
-};
 
-const clone = deepClone(original);
-clone.name = "Bob";
-clone.address.city = "Dreamland";
+console.log(flattenAndSort([[3, 1000, 2, 1], [4, 6, 5], [], [9, 7, 8]])); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(flattenAndSort([[1, 3, 5], [100], [2, 4, 6]])); // [1, 2, 3, 4, 5, 6, 100]
+console.log(flattenAndSort([[], []])); // []
 
-console.log(original.name); // "Alice"
-console.log(original.address.city); // "Wonderland"
-console.log(clone.name); // "Bob"
-console.log(clone.address.city); // "Dreamland"
+
+let array = [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]];
+let newArr = array.flat().sort();
+
+// console.log(newArr);

@@ -1,18 +1,4 @@
-## Today's Challenge: Area of a Triangle
-Write a function that takes the base and height of a triangle and return its area.
-
-```javascript
-triArea(3, 2) ➞ 3
-
-triArea(7, 4) ➞ 14
-
-triArea(10, 10) ➞ 50
-```
-
-
-
-
-## Challenge on Hold:
+## Today's Challenge: 
 Write a function called **flattenAndSort** that takes a two-dimensional array of numbers (an array containing other arrays of numbers) and returns a single, flat array of numbers, sorted in ascending order.
 
 ### Requirements:
