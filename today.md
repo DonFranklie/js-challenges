@@ -1,18 +1,4 @@
 ## Today's Challenge: 
-Write a function called **flattenAndSort** that takes a two-dimensional array of numbers (an array containing other arrays of numbers) and returns a single, flat array of numbers, sorted in ascending order.
-
-### Requirements:
-
-1. Flatten the array to remove all nested levels.
-2. Sort the numbers in ascending order.
-
-```javascript
-console.log(flattenAndSort([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]])); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
-console.log(flattenAndSort([[1, 3, 5], [100], [2, 4, 6]])); // [1, 2, 3, 4, 5, 6, 100]
-console.log(flattenAndSort([[], []])); // []
-```
-
-## Challenge 2 {Put on Hold}:
 Write a function called **capitalizeWords** that takes a sentence as input and returns the sentence with the first letter of each word capitalized.
 
 ### Requirements:

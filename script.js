@@ -1,19 +1,22 @@
+function removeDuplicates(s) {
+  if (s.length === 1) return s;
+  let stack = [];
 
-function flattenAndSort(array) {
-  // Step 1: Flatten the array using reduce
-  const flattenedArray = array.reduce((acc, curr) => acc.concat(curr), []);
-  
-  // Step 2: Sort the flattened array in ascending order
-  return flattenedArray.sort((a, b) => a - b);
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === stack[stack.length - 1]) {
+      stack.pop();
+    } else {
+      stack.push(s[i])
+    }
+    
+  }
+
+  return stack.join("");
 }
 
+console.log(removeDuplicates("abbaca"));
+console.log(removeDuplicates("azxxzy"));
 
-console.log(flattenAndSort([[3, 1000, 2, 1], [4, 6, 5], [], [9, 7, 8]])); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
-console.log(flattenAndSort([[1, 3, 5], [100], [2, 4, 6]])); // [1, 2, 3, 4, 5, 6, 100]
-console.log(flattenAndSort([[], []])); // []
+const newSet = new Set([1,2,3,[4,4], [4,4],5,5,4]);
 
-
-let array = [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]];
-let newArr = array.flat().sort();
-
-// console.log(newArr);
+console.log(newSet);
